@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .one {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        .two {
+            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* transition: 2s; */
+            
+        }
+        .one:hover{
+            width: 300px;
+            height: 300px;
+            background-color: green;
+        }
+        .two:hover{
+            /* transform: translate(-50,-50); */
+            /* transform: rotate(45deg); */
+            /* transform: scale(2,1); */
+            transform: skew(9deg, 30deg);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>

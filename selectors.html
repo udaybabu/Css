@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        *{
+           margin: 0px;
+        }
+        p{
+            background: red;
+        }
+        .class_selector{
+            background: green;
+        }
+        #id_selector{
+            background: yellow;
+        }
+        h1>p{
+            background: pink;
+        }
+        h1>p>span{
+            background: brown;
+        }
+        h2 p {
+            background: blue;
+        }
+        #group1, #group2 {
+            background: lightgreen;
+        }
+        #psudo_selector:hover{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Universal Selector</p>
+        <p>Element Selector</p>
+        <p class="class_selector">Class Selector</p>
+        <p id="id_selector">Id Selector</p>
+        <div>
+            <p id="group1">Group Element1</p>
+            <p id="group2">Group Element2</p>
+        </div>
+        <h1>
+            <p>Child Selector
+                <span>Test</span>
+            </p>
+        </h1>
+        <h2>
+            <p>Descandant Selector</p>
+        </h2>
+        <input type="text" name="username" id="attribute_selector" placeholder="Attribute selector"/>
+        <p id="psudo_selector">Psudo class selector</p>
+    </div>
+</body>
+</html>

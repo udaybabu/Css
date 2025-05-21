@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Noto+Sans+JP:wght@100..900&family=Rubik+Microbe&display=swap');
+.test-fonts {
+    font-family: "Faster One", system-ui;
+    font-weight: 400;
+    font-style: normal
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        input[type="text"]{
+            background-color: blue;
+        }
+        p[name="para1"]{
+            background-color: blueviolet;
+        }
+        p[name ~= "para2"]{
+            background-color: aqua;
+        }
+        p[name |= "para3"]{
+            background-color: brown;
+        }
+        p[name $= "para4"]{
+            background-color: brown;
+        }
+        p[name ^= "para5"]{
+            background-color: brown;
+        }
+        p[name *= "para6"]{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="username" id="user" />
+    <p name="para1">paragraph1</p>
+    <p name="para2 this">paragraph2</p>
+    <p name="para3-thjsjs">paragraph3</p>
+    <p name="theuiapara4">paragraph4</p>
+    <p name="para5hsus">paragraph5</p>
+    <p name="thjf para6 hsjs">paragraph6</p>
+</body>
+</html>

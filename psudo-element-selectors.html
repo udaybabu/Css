@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psudo class selectors</title>
+    <style>
+        #first-letter::first-letter {
+            font-size: 18px;
+            color: black;
+        }
+        #first-line::first-line {
+           background-color: yellow;
+        }
+        #before-class::before{
+            content: "Before";
+            color: green;
+        }
+        #after-class::after{
+            content: " After text";
+            color: blue;
+        }
+        #selection::selection{
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="first-letter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magnam iusto voluptas modi qui! Provident odit, corrupti, labore iste nulla magnam soluta voluptatum aspernatur qui sed fugiat accusamus numquam in!</p>
+        <p id="first-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quae id ab nemo impedit ullam voluptatem minus praesentium recusandae voluptatibus necessitatibus, error, saepe dolorum a neque inventore corporis, reiciendis autem!
+        </p>
+        <p id="before-class"> this is before class</p>
+        <p id="after-class"> this is after calss</p>
+        <p id="selection">This is selection Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis sequi laboriosam ex unde exercitationem molestias id officiis expedita, officia quam minima quidem accusamus debitis ut aliquam magnam in labore quis.</p>
+    </div>
+</body>
+</html>

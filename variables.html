@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        :root {
+          --primeryColor:rgb(200,150,100);
+          --fontPrimery:24px;
+        }
+
+        .one {
+            width: 200px;
+            height: 200px;
+            background:var(--primeryColor) ;
+        }
+
+        .two {
+            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+            background-color: var(--primeryColor);
+        }
+        .three {
+            font-size: var(--fontPrimery);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <P class="three">Lorem ipsum dolor, 
+        sit amet consectetur adipisicing elit. Aut alias nam eaque facere! Repudiandae quisquam, 
+        voluptatum amet ipsam assumenda deleniti necessitatibus eos odio laudantium aspernatur voluptates saepe, 
+        aliquam porro laborum?</P>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+     .first {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+     }
+     .second {
+        margin-top: 20px;
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        /* transition: width 4s linear 3s; */
+        /* transition-property: width;
+        transition-duration: 4s;
+        transition-timing-function: linear;
+        transition-delay: 3s; */
+        transition: width 1s, height 1s, background-color 1s;
+     }
+     .first:hover, .second:hover{
+        width: 300px;
+        height: 300px;
+        background-color: brown;
+     }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="first"></div>
+        <div class="second"></div>
+    </div>
+</body>
+</html>
